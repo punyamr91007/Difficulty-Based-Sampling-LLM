@@ -101,5 +101,51 @@ Department of Computer Science and Engineering
 Artificial Intelligence and Machine Learning (AIML)
 
 ---
+## 12. Installation and Execution Instructions
+
+### Requirements
+
+The project uses Python and the following libraries:
+
+- PyTorch
+- Transformers
+- Datasets
+- TRL
+- PEFT
+- Accelerate
+- NumPy
+- Pandas
+- Matplotlib
+
+### Installation
+
+Open Google Colab and install the required packages using:
+
+```python
+!pip install -q transformers datasets trl peft accelerate matplotlib
+```
+
+### How to Run the Project
+
+1. Open the project notebook: `Difficulty_Based_Sampling_Submission.ipynb`.
+2. Open it using Google Colab.
+3. Select a GPU runtime if available.
+4. Run the notebook cells in their intended order.
+5. Load the GSM8K dataset and Qwen2.5-0.5B-Instruct model.
+6. Execute the pilot, fixed sampling and adaptive sampling experiments.
+7. Run the GRPO training and evaluation sections when the required runtime is available.
+8. View the generated accuracy comparisons and experimental results.
+
+### Experimental Results
+
+The experiment outputs, CSV files, JSON summaries and graphs are provided in:
+
+`research_project_results.zip`
+
+Download and extract this ZIP file to access the saved results.
+
+### Reproducibility Note
+
+Training and evaluation may require substantial computing resources. A GPU-enabled Google Colab runtime is recommended. The recorded experimental results are included in the repository for reference.
 
 *This repository contains the implementation and experimental findings of our research project.*
